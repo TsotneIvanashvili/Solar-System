@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-center">
+        <div class="loader-sun"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+    </div>
+    <div class="loader-text">Exploring the cosmos</div>
+</div>
+
+<canvas class="stars" id="stars"></canvas>
+<canvas class="falling-stars" id="fallingStars"></canvas>
+
+<div class="solar-system" id="solarSystem">
+    <div class="sun" id="sun"></div>
+    <div class="sun-label">Sun</div>
+</div>
+
+<div class="info-panel" id="infoPanel">
+    <h3 id="infoName"></h3>
+    <p id="infoDesc"></p>
+</div>
+
+<div class="controls">
+    <label>Speed</label>
+    <input type="range" id="speedSlider" min="0" max="3" step="0.1" value="1">
+    <button id="pauseBtn">Pause</button>
+</div>
+
+
+<script src="./main.js"></script>
+
+</body>
+</html>
